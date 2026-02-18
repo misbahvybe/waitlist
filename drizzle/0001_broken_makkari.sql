@@ -1,0 +1,1 @@
+ALTER TYPE "public"."waitlist_status" ADD VALUE 'ONBOARDED' BEFORE 'REJECTED';

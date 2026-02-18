@@ -1,0 +1,31 @@
+CREATE TYPE "public"."waitlist_status" AS ENUM('NEW', 'CONTACTED', 'CONVERTED', 'REJECTED');--> statement-breakpoint
+CREATE TYPE "public"."waitlist_type" AS ENUM('STORE', 'RIDER', 'CUSTOMER');--> statement-breakpoint
+CREATE TABLE "waitlist_entries" (
+	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"type" "waitlist_type" NOT NULL,
+	"name" text NOT NULL,
+	"phone" text NOT NULL,
+	"email" text,
+	"area" text NOT NULL,
+	"store_name" text,
+	"category" text,
+	"avg_daily_orders" integer,
+	"avg_order_value" numeric(10, 2),
+	"current_commission" numeric(5, 2),
+	"current_platform" text,
+	"interested_in_15_percent" boolean,
+	"whatsapp" text,
+	"owns_bike" boolean,
+	"daily_earnings" numeric(10, 2),
+	"availability_hours" integer,
+	"flexible_shift_interest" boolean,
+	"interest_category" text,
+	"wants_launch_discount" boolean,
+	"utm_source" text,
+	"utm_campaign" text,
+	"utm_medium" text,
+	"status" "waitlist_status" DEFAULT 'NEW' NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp DEFAULT now() NOT NULL,
+	CONSTRAINT "waitlist_entries_phone_unique" UNIQUE("phone")
+);
