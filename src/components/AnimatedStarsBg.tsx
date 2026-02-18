@@ -11,7 +11,7 @@ export function AnimatedStarsBg() {
         {Array.from({ length: 60 }).map((_, i) => (
           <div
             key={i}
-            className="absolute rounded-full bg-amber-400/60 animate-star-float"
+            className="absolute rounded-full bg-white/40 animate-star-float"
             style={{
               left: `${(i * 17) % 100}%`,
               top: `${(i * 23) % 100}%`,
@@ -26,7 +26,7 @@ export function AnimatedStarsBg() {
         {Array.from({ length: 40 }).map((_, i) => (
           <div
             key={`s2-${i}`}
-            className="absolute rounded-full bg-emerald-400/45 animate-star-float-reverse"
+            className="absolute rounded-full bg-slate-500/50 animate-star-float-reverse"
             style={{
               left: `${(i * 31) % 100}%`,
               top: `${(i * 19) % 100}%`,
@@ -41,7 +41,7 @@ export function AnimatedStarsBg() {
         {Array.from({ length: 30 }).map((_, i) => (
           <div
             key={`s3-${i}`}
-            className="absolute rounded-full bg-white/70 animate-star-twinkle"
+            className="absolute rounded-full bg-slate-400/60 animate-star-twinkle"
             style={{
               left: `${(i * 29) % 100}%`,
               top: `${(i * 37) % 100}%`,

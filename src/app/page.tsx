@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { EarlyAdopterCount } from "@/components/EarlyAdopterCount";
 
 export default function HomePage() {
   return (
@@ -18,6 +17,10 @@ export default function HomePage() {
             SuperApp
           </p>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-slate-400">
+          Everything you need-now with crypto.
+</p>
+          {/* Replace tagline below with your finalized punchline */}
+          <p className=" max-w-2xl mx-auto text-lg text-slate-400">
             The ultimate super app combining food delivery and rider services in
             one seamless platform
           </p>
@@ -45,28 +48,6 @@ export default function HomePage() {
           </div>
         </div>
       </header>
-
-      {/* Limited Opportunity */}
-      <section className="relative z-10 border-y border-slate-800 bg-slate-900/50">
-        <div className="mx-auto max-w-5xl px-6 py-16 text-center">
-          <h2 className="text-2xl font-bold text-amber-400">
-            LIMITED OPPORTUNITY
-          </h2>
-          <p className="mt-2 text-slate-400">slots remaining</p>
-          <p className="mt-6 text-xl font-semibold text-emerald-400">
-            🎉 First 1000 registrations get 30% Launch Discount
-          </p>
-          <Link
-            href="/join-customer"
-            className="mt-8 inline-block rounded-xl bg-amber-500 px-10 py-4 font-semibold text-slate-950 transition hover:bg-amber-400"
-          >
-            Pre-Register Now
-          </Link>
-          <p className="mt-6 text-slate-400">
-            Join <EarlyAdopterCount />
-          </p>
-        </div>
-      </section>
 
       {/* Feature Cards */}
       <section className="relative z-10 mx-auto max-w-5xl px-6 py-20">
@@ -101,14 +82,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* VYBE Superapp - Crypto */}
+      {/* VYBE Superapp - Replace line below with your finalized tagline */}
       <section className="relative z-10 border-t border-slate-800 bg-slate-900/30">
         <div className="mx-auto max-w-5xl px-6 py-16 text-center">
           <h2 className="text-2xl font-bold text-amber-400">
             VYBE Superapp
           </h2>
-          <p className="mt-4 text-lg text-slate-300">
-            Everything you need — now with crypto
+          <p className="mt-4 text-xl font-medium text-slate-200">
+            {/* TODO: Replace with your finalized line */}
+            Your all-in-one platform for delivery and more
           </p>
         </div>
       </section>
@@ -117,7 +99,7 @@ export default function HomePage() {
       <section className="relative z-10 border-t border-slate-800">
         <div className="mx-auto max-w-5xl px-6 py-16 text-center">
           <p className="text-lg text-slate-400">
-            Limited spots for founding partners. Join the waitlist today.
+            Join the waitlist today.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <Link
