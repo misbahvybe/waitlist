@@ -14,7 +14,7 @@ export default function HomePage() {
             Lahore&apos;s Fair Delivery Platform
           </p>
           <p className="mt-4 max-w-2xl text-lg text-slate-400">
-            15% commission. 90–120 min delivery. Launching soon.
+            15% commission. Launching soon.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <Link
@@ -99,7 +99,6 @@ export default function HomePage() {
           <div className="rounded-xl border border-slate-700 bg-slate-800/50 p-6">
             <h3 className="font-semibold text-sky-400">For Customers</h3>
             <ul className="mt-3 space-y-2 text-sm text-slate-300">
-              <li>• Reliable 90–120 min delivery</li>
               <li>• Transparent pricing</li>
               <li>• Early launch discounts</li>
             </ul>

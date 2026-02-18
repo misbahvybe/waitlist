@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VYBE – Lahore's Fair Delivery Platform",
   description:
-    "15% commission. 90–120 min delivery. Join Lahore's fair delivery waitlist for stores, riders, and customers.",
+    "15% commission. Join Lahore's fair delivery waitlist for stores, riders, and customers.",
 };
 
 export default function RootLayout({
