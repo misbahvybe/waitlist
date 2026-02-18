@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AnimatedStarsBg } from "@/components/AnimatedStarsBg";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VYBE – Lahore's Fair Delivery Platform",
+  title: "VYBE SuperApp – Coming Soon",
   description:
-    "15% commission. Join Lahore's fair delivery waitlist for stores, riders, and customers.",
+    "The ultimate super app combining food delivery and rider services. Pre-register now for 30% launch discount.",
 };
 
 export default function RootLayout({
@@ -28,7 +29,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AnimatedStarsBg />
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
