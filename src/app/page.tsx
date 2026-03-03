@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Countdown } from "@/components/Countdown";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,8 @@ export default function HomePage() {
             The ultimate super app combining food delivery and rider services in
             one seamless platform
           </p>
+
+          <Countdown />
 
           {/* Restaurants | Riders | Customers */}
           <div className="mt-12 flex flex-wrap justify-center gap-6">

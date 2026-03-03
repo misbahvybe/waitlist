@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "VYBE SuperApp – Coming Soon",
   description:
-    "The ultimate super app combining food delivery and rider services. Pre-register now for 30% launch discount.",
+    "The ultimate super app combining food delivery and rider services. Join the waitlist.",
 };
 
 export default function RootLayout({
